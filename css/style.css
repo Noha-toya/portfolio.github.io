@@ -1,0 +1,75 @@
+/***********************************************************************/
+/*ヘッダー*/
+/***********************************************************************/
+#header {
+  width: 100%;
+  padding: 0;
+
+  position: fixed;
+
+  height: 100px;
+  background-color: #eee;
+}
+#header .headertop {
+  padding: 0;
+  margin: 15px;
+  text-align: center; /*中央よせ*/
+}
+.nav {
+  text-align: center; /*中央よせ*/
+}
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; /*リストの●なし*/
+}
+.nav li {
+  display: inline-block; /*横並びのブロック要素*/
+  margin: 0;
+  padding: 4px;
+  text-align: center; /*中央よせ*/
+  width: 170px;
+  height: 25px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  position: relative;
+}
+/*ナビゲーションバーのリンクの色を変えない＋下線なし*/
+.nav a:link,
+a:visited,
+a:active {
+  color: #000;
+  text-decoration: none;
+}
+/* hoverはマウスが上を通過したとき*/
+.nav li:hover {
+  opacity: 0.7; /*半透明*/
+}
+/*メニュー仕切り*/
+.nav li::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 25px;
+  right: 0;
+  top: 0px;
+  background: #000;
+}
+.nav li:last-child::after {
+  content: none;
+}
+/***********************************************************************/
+/*メインコンテンツ*/
+/***********************************************************************/
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+#main {
+  padding-top: 100px; /*ヘッダの分あける*/
+}
+
+.about {
+}
