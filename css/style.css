@@ -87,6 +87,7 @@ a:active {
   background-color: #777777;
   min-height: calc(100vh - 200px);
 }
+
 /*コンテンツを記述する板*/
 .article {
   max-width: 720px;
@@ -95,6 +96,14 @@ a:active {
   background-color: #ffffff;
 }
 
+@media (max-width: 560px) {
+  .article {
+    margin: 0px 0px;
+    max-width: 720px;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+}
 .container {
   max-width: 720px;
   margin: 0 auto;
