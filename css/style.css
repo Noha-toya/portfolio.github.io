@@ -2,12 +2,11 @@ html {
   font-size: 62.5%;
   color: #000000;
 }
-@media (max-width: 560px) {
+@media screen and(max-width: 560px) {
   html {
     font-size: 2.66vw; /* 10/375*100 */
   }
 }
-
 body {
   font-size: 1.4rem; /* basic size 14px */
 
@@ -48,7 +47,7 @@ body {
   margin: 0;
   padding: 4px;
   text-align: center; /*中央よせ*/
-  width: 170px;
+  width: 30%;
   height: 25px;
   box-sizing: border-box;
   position: relative;
